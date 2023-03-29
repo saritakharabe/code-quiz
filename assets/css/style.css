@@ -15,7 +15,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -29,6 +29,7 @@ a {
 
 /* Header */
 header {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -38,11 +39,14 @@ header {
 .scores a,
 .timer {
   font-size: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .scores a {
   color: var(--secondary-color);
   cursor: pointer;
+  margin-left: 25px;
 }
 
 .scores a:hover {
@@ -91,6 +95,20 @@ button {
 button:hover {
   background-color: var(--secondary-color);
 }
+#question-container{
+  width: 60%;
+  justify-content: center;
+  text-align: center;
+  margin-left: 15%;
+}
+
+#score-container{
+  text-align: center;
+}
+#highscore{
+  width: 50%;
+  margin-left: 25%;
+}
 
 .hide {
   display: none;
@@ -124,6 +142,7 @@ input[type="text"] {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+ 
 }
 
 .name-div,
